@@ -113,7 +113,8 @@ distro==1.9.0
     # via openai
 docker==7.1.0
     # via pyautogen
-duckduckgo-search==6.2.11
+duckduckgo-search==
+#duckduckgo-search==6.2.11
     # via -r ./requirements/requirements.in
 executing==2.1.0
     # via stack-data
