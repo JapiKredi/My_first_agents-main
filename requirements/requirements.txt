@@ -113,8 +113,7 @@ distro==1.9.0
     # via openai
 docker==7.1.0
     # via pyautogen
-#duckduckgo-search==6.2.11
-duckduckgo-search==6.3.7 
+duckduckgo-search==6.3.7
     # via -r ./requirements/requirements.in
 executing==2.1.0
     # via stack-data
@@ -498,7 +497,6 @@ playwright==1.46.0
     # via -r ./requirements/requirements.in
 posthog==3.6.0
     # via chromadb
-#primp==0.6.1
 primp==0.9.1
     # via duckduckgo-search
 prometheus-client==0.20.0
