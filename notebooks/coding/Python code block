@@ -1,0 +1,28 @@
+# Python code block
+import yfinance as yf
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Define the tickers
+tickers = ["NVDA", "TSLA"]
+
+# Get data from this year
+data = yf.download(tickers, start=pd.to_datetime('2022-01-01'), end=pd.to_datetime('today'))
+
+# Check if the data download was successful 
+if data.empty:
+    print("Failed to download the data, the dataframe is empty.")
+else:
+    try:
+        # Calculate the percentage change
+        data_pc = data['Close'].pct_change()
+    except KeyError:
+        print("KeyError: Data downloaded does not contain a 'Close' column")
+    else:
+        # Calculate cumulative product returns
+        data_pc_cum = (data_pc + 1).cumprod()
+
+        # Plot graphs for both Tickers
+        data_pc_cum.plot()
+        plt.title(f'Stock Price Change YTD for {" and ".join(tickers)}')
+        plt.show()
