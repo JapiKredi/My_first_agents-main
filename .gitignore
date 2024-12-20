@@ -167,5 +167,4 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 .DS_Store
-.OAI_CONFIG_LIST.json
-.OAI_CONFIG_LIST
+OAI_CONFIG_LIST.json
