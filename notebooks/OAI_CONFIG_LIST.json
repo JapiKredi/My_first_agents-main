@@ -1,0 +1,4 @@
+[
+    {"name": "agent1", "api_key": "key1", "model": "gpt-3.5-turbo"},
+    {"name": "agent2", "api_key": "key2", "model": "gpt-4"}
+]
